@@ -7,5 +7,10 @@ public class Banco {
 
     private String nome;
     private List<Conta> contas;
+    private List<Cliente> clientes;
 
+    void imprimeClientes() {
+
+    }
 }
+

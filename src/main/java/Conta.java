@@ -1,10 +1,13 @@
 import lombok.Data;
 
+import java.util.Scanner;
+
 @Data
 public abstract class Conta implements IConta {
 
     private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
+
 
     protected int agencia;
     protected int numero;
@@ -14,6 +17,9 @@ public abstract class Conta implements IConta {
     public Conta(Cliente cliente) {
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        cliente.setNome(leitor.nextLine());
         this.cliente = cliente;
     }
 
