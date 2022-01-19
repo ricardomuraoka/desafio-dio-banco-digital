@@ -12,16 +12,11 @@ public class Banco {
     private List<Cliente> clientes;
 
     public void adiciona(Conta c) {
-        if (contas == null || contas.isEmpty()) {
-            this.contas.add(c);
-    } else {
-            for (int i = 0; i < this.contas.size(); i++) {
+        for (int i = 0; i < this.contas.size(); i++) {
                 this.contas.add(c);
-                break;
             }
-
         }
-    }
+
 
     public void listaClientes() {
         for(int i=0;i<contas.size();i++) {
