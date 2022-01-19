@@ -1,7 +1,7 @@
 # Projeto DIO Banco Digital
 
   - ✅ Subido no GitHub com referência de projeto Prof. Venilton 
-  - ❌ Desafio Mentor 1 - Novas classes, atributos e etc...(Novas atualizações estarão disponíveis antes do final do bootcamp)
+  - ✅ Desafio Mentor 1 - Novos métodos implementados
   - ✅ Desafio Mentor 2 - Uso do Lombok
 
 

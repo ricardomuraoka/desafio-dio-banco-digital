@@ -1,4 +1,6 @@
 import lombok.Data;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -6,11 +8,27 @@ import java.util.List;
 public class Banco {
 
     private String nome;
-    private List<Conta> contas;
+    private List<Conta> contas = new ArrayList<Conta>();
     private List<Cliente> clientes;
 
-    void imprimeClientes() {
+    public void adiciona(Conta c) {
+        if (contas == null || contas.isEmpty()) {
+            this.contas.add(c);
+    } else {
+            for (int i = 0; i < this.contas.size(); i++) {
+                this.contas.add(c);
+                break;
+            }
 
+        }
+    }
+
+    public void listaClientes() {
+        for(int i=0;i<contas.size();i++) {
+            System.out.println(contas.get(i).getCliente());
+        }
     }
 }
+
+
 
