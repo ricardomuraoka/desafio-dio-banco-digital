@@ -8,19 +8,19 @@ import java.util.List;
 public class Banco {
 
     private String nome;
-    private List<Conta> contas = new ArrayList<Conta>();
+    private List<Conta> contas = new ArrayList<>();
     private List<Cliente> clientes;
 
     public void adiciona(Conta c) {
-        for (int i = 0; i < this.contas.size(); i++) {
-                this.contas.add(c);
-            }
+
+        this.contas.add(c);
+
         }
 
 
     public void listaClientes() {
-        for(int i=0;i<contas.size();i++) {
-            System.out.println(contas.get(i).getCliente());
+        for (Conta conta : this.contas) {
+            System.out.println(conta.getCliente());
         }
     }
 }
