@@ -21,6 +21,8 @@ public abstract class Conta implements IConta {
         System.out.println("Digite seu nome: ");
         cliente.setNome(leitor.nextLine());
         this.cliente = cliente;
+        System.out.println("Digite seu cpf: ");
+        cliente.setCpf(leitor.nextLine());
     }
 
     @Override

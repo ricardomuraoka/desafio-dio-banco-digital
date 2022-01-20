@@ -20,7 +20,9 @@ public class Banco {
 
     public void listaClientes() {
         for (Conta conta : this.contas) {
-            System.out.println(conta.getCliente());
+            System.out.println("=== Cliente ===");
+            System.out.println("Nome: "+conta.getCliente().getNome());
+            System.out.println("CPF: "+conta.getCliente().getCpf());
         }
     }
 }
