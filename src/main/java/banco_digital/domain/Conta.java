@@ -59,11 +59,8 @@ public abstract class Conta implements IConta {
         contaDestino.depositar(valor);
     }
 
-    // Imprime as informações de conta
-    protected void imprimirInfosComuns() {
-        System.out.printf("Titular: %s%n", this.cliente.getNome());
-        System.out.printf("Agencia: %d%n", this.agencia);
-        System.out.printf("Numero: %d%n", this.numero);
-        System.out.printf("Saldo: %.2f%n", this.saldo);
+    public String toString() {
+        return String.format("Titular: %-20s Agencia: %-5d Numero: %-4d Saldo: %-6.2f", this.cliente.getNome(),
+                this.agencia, this.numero, this.saldo);
     }
 }

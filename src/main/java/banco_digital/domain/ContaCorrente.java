@@ -1,5 +1,7 @@
 package banco_digital.domain;
 
+import banco_digital.helpers.Listagem;
+
 public class ContaCorrente extends Conta {
 
     /**
@@ -13,15 +15,7 @@ public class ContaCorrente extends Conta {
 
     public ContaCorrente(Cliente cliente, double saldo) {
         super(cliente);
-    }
-
-    /**
-     * Utiliza o método de impressão de conta ImprimirInfosComuns() + caracteristicas especificas de conta corrente
-     */
-    @Override
-    public void imprimirExtrato() {
-        System.out.println("=== Extrato dominio.Conta Corrente ===");
-        super.imprimirInfosComuns();
+        this.saldo = saldo;
     }
 
 }

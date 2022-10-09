@@ -44,7 +44,7 @@ public class CriaDatabase {
     public void criaContaCorrente(@NotNull Banco b) throws NoSuchAlgorithmException {
         Random rand = SecureRandom.getInstanceStrong();
         for (Cliente cliente: b.getClientes()) {
-            b.adicionaConta(new ContaCorrente(cliente, rand.nextDouble(100.00) + 500.00));
+            b.adicionaConta(new ContaCorrente(cliente, rand.nextDouble(900.00) + 100.00));
         }
     }
 }

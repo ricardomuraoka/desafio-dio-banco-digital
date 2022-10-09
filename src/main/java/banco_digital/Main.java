@@ -21,6 +21,9 @@ public class Main {
         List<Conta> contas = banco.getContas();
 
         new Listagem().listaClientes(banco);
+        new Listagem().listaInfoConta(banco);
+        new Listagem().imprimirExtratoContaCorrente(banco);
+        new Listagem().imprimirExtratoContaPoupanca(banco);
     }
 
 }
