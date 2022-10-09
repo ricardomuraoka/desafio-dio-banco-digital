@@ -1,4 +1,4 @@
-# Projeto DIO Banco Digital
+# Projeto DIO banco_digital.domain.Banco Digital
 
   - ✅ Subido no GitHub com referência de projeto Prof. Venilton 
   - ✅ Desafio Mentor 1 - Novos métodos implementados
@@ -6,7 +6,7 @@
 
 
     Projeto Digital Innovation One Java
-# Criando um Banco Digital com Java e Orientação a Objetos
+# Criando um banco_digital.domain.Banco Digital com Java e Orientação a Objetos
 Link do código original: https://github.com/falvojr/lab-banco-digital-oo
 
 # Descrição do Desafio

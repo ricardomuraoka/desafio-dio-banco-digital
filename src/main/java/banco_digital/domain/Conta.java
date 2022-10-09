@@ -1,3 +1,5 @@
+package banco_digital.domain;
+
 import lombok.Data;
 
 import java.util.Scanner;
@@ -6,7 +8,7 @@ import java.util.Scanner;
 public abstract class Conta implements IConta {
 
     private static final int AGENCIA_PADRAO = 1;
-    private static int SEQUENCIAL = 1;
+    private static int sequencial = 1;
 
 
     protected int agencia;
@@ -15,15 +17,10 @@ public abstract class Conta implements IConta {
     protected Cliente cliente;
 
     // Adiciona agencia padrão, um número sequencial, e solicita o Nome de CPF do cliente
-    public Conta(Cliente cliente) {
+    protected Conta(Cliente cliente) {
         this.agencia = Conta.AGENCIA_PADRAO;
-        this.numero = SEQUENCIAL++;
-        Scanner leitor = new Scanner(System.in);
-        System.out.println("Digite seu nome: ");
-        cliente.setNome(leitor.nextLine());
+        this.numero = sequencial++;
         this.cliente = cliente;
-        System.out.println("Digite seu cpf: ");
-        cliente.setCpf(leitor.nextLine());
     }
     // Método saca retira determinado valor do valor total do saldo
     @Override
@@ -31,7 +28,7 @@ public abstract class Conta implements IConta {
         saldo -= valor;
     }
 
-    // Método deposita adiciona determinado valor do valor total do saldo
+    // Método deposita adicionaConta determinado valor do valor total do saldo
     @Override
     public void depositar(double valor) {
         saldo += valor;

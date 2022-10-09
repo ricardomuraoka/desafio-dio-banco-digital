@@ -1,13 +1,16 @@
-public class ContaPoupanca extends Conta {
+package banco_digital.domain;
 
-    public ContaPoupanca(Cliente cliente) {
+public class ContaCorrente extends Conta {
+
+    public ContaCorrente(Cliente cliente) {
         super(cliente);
     }
 
     // Utiliza o método de impressão de conta ImprimirInfosComuns() + caracteristicas especificas de conta corrente.
     @Override
     public void imprimirExtrato() {
-        System.out.println("=== Extrato Conta Poupança ===");
+        System.out.println("=== Extrato dominio.Conta Corrente ===");
         super.imprimirInfosComuns();
     }
+
 }
