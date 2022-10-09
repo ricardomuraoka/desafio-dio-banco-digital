@@ -8,14 +8,14 @@ public class Listagem {
      * @param b o banco de onde serão retiradas as informações de clientes.
      */
     public void listaClientes(Banco b) {
-        System.out.println("=== Listagem de clientes ===");
+        System.out.println("============ Listagem de clientes ============");
         for (Cliente cliente :  b.getClientes()) {
             System.out.println(cliente);
         }
     }
 
     public void listaInfoConta(Banco b) {
-        System.out.println("=== Informações de Conta ===");
+        System.out.println("======================== Informações de Conta ========================");
         for (Conta conta : b.getContas()) {
             System.out.println(conta);
         }
@@ -26,7 +26,7 @@ public class Listagem {
      */
 
     public void imprimirExtratoContaCorrente(Banco b) {
-        System.out.println("=== Extrato de Conta Corrente ===");
+        System.out.println("====================== Extrato de Conta Corrente ======================");
         for (Conta conta: b.getContas()) {
             if (conta instanceof ContaCorrente)
                 System.out.println(conta);
@@ -37,7 +37,7 @@ public class Listagem {
      * Utiliza o método de impressão de conta Poupança para as contas Poupancas no banco
      */
     public void imprimirExtratoContaPoupanca(Banco b) {
-        System.out.println("=== Extrato de Conta Poupanca ===");
+        System.out.println("====================== Extrato de Conta Poupanca ======================");
         for (Conta conta: b.getContas()) {
             if (conta instanceof ContaPoupanca) {
                 System.out.println(conta);
