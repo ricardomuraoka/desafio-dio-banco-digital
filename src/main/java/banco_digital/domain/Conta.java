@@ -16,11 +16,28 @@ public abstract class Conta implements IConta {
     protected double saldo;
     protected Cliente cliente;
 
-    // Adiciona agencia padrão, um número sequencial, e solicita o Nome de CPF do cliente
+    /**
+     * Primeiro construtor
+     * Adiciona agencia padrão, um número sequencial, e solicita o Nome de CPF do cliente
+     * @param cliente
+     */
     protected Conta(Cliente cliente) {
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = sequencial++;
         this.cliente = cliente;
+    }
+
+    /**
+     * Segundo construtor
+     * Adiciona agencia padrão, um número sequencial, e solicita o Nome de CPF do cliente, e o valor inicial
+     * @param cliente o Cliente que abrirá a conta
+     * @param saldo o saldo inicial da conta
+     */
+    protected Conta(Cliente cliente, double saldo) {
+        this.agencia = Conta.AGENCIA_PADRAO;
+        this.numero = sequencial++;
+        this.cliente = cliente;
+        this.saldo = saldo;
     }
     // Método saca retira determinado valor do valor total do saldo
     @Override

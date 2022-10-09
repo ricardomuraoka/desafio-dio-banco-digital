@@ -41,11 +41,7 @@ public class Banco {
     /**
      * Imprime os clientes do banco
      */
-    public void listaClientes() {
-        for (Cliente cliente : this.clientes) {
-            System.out.println(cliente);
-        }
-    }
+
 }
 
 

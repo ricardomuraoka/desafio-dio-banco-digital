@@ -6,6 +6,10 @@ public class ContaPoupanca extends Conta {
         super(cliente);
     }
 
+    public ContaPoupanca(Cliente cliente, double saldo) {
+        super(cliente);
+    }
+
     // Utiliza o método de impressão de conta ImprimirInfosComuns() + caracteristicas especificas de conta corrente.
     @Override
     public void imprimirExtrato() {
